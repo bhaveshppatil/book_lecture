@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BookLecture</string>
+    <string name="title">Book Lecture</string>
+    <string name="getLocation">Get Location -></string>
 </resources>

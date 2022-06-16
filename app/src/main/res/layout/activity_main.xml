@@ -1,18 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutTopBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/tvTopBarTitle"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#152238"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvBookLectures"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/title"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvTopBarTitle" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/getLocation"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="@id/tvBookLectures"
+                app:layout_constraintTop_toBottomOf="@id/tvBookLectures" />
+
+            <ImageView
+                android:id="@+id/ivScanner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="5dp"
+                android:src="@drawable/scanner"
+                app:layout_constraintBottom_toBottomOf="@id/tvTopBarTitle"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvTopBarTitle" />
+
+            <ImageView
+                android:id="@+id/ivNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="5dp"
+                android:src="@drawable/notification"
+                app:layout_constraintBottom_toBottomOf="@id/tvTopBarTitle"
+                app:layout_constraintRight_toLeftOf="@id/ivScanner"
+                app:layout_constraintTop_toTopOf="@id/tvTopBarTitle" />
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="5dp"
+                android:src="@drawable/search"
+                app:layout_constraintBottom_toBottomOf="@id/tvTopBarTitle"
+                app:layout_constraintRight_toLeftOf="@id/ivNotification"
+                app:layout_constraintTop_toTopOf="@id/tvTopBarTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/parent_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200"
+            android:layout_below="@id/layoutTopBar">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabDots"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:tabBackground="@drawable/tab_layout"
+                app:tabIndicatorHeight="1dp"
+                app:tabMode="fixed" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</layout>
