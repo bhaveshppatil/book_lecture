@@ -2,4 +2,8 @@
     <string name="app_name">BookLecture</string>
     <string name="title">Book Lecture</string>
     <string name="getLocation">Get Location -></string>
+    <string name="subjects">Subjects</string>
+    <string name="live_topics">Live Topics</string>
+    <string name="online_streaming">Online Streaming</string>
+    <string name="events">Events</string>
 </resources>
