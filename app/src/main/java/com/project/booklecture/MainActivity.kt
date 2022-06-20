@@ -22,10 +22,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         dataBinding.apply {
 
-            ivMathSub.setOnClickListener { this@MainActivity }
-            ivChemistrySub.setOnClickListener { this@MainActivity }
-            ivBiologySub.setOnClickListener { this@MainActivity }
-            ivPhysicsSub.setOnClickListener { this@MainActivity }
+            ivMathSub.setOnClickListener(this@MainActivity)
+            ivPhysicsSub.setOnClickListener(this@MainActivity)
+            ivBiologySub.setOnClickListener(this@MainActivity)
+            ivChemistrySub.setOnClickListener(this@MainActivity)
+
         }
     }
 
@@ -34,7 +35,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         TabLayoutMediator(
             dataBinding.tabDots,
             dataBinding.viewPager,
-            TabLayoutMediator.TabConfigurationStrategy { tab, position ->
+            TabLayoutMediator.TabConfigurationStrategy { _, _ ->
 
             }).attach()
         dataBinding.viewPager.registerOnPageChangeCallback(object :

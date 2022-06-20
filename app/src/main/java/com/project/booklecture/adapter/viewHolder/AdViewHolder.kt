@@ -1,4 +1,4 @@
-package com.project.booklecture.adapter.viewPager
+package com.project.booklecture.adapter.viewHolder
 
 import android.view.View
 import android.widget.ImageView

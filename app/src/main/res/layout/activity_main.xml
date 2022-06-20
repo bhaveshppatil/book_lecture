@@ -131,30 +131,36 @@
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:id="@+id/ivPhysicsSub"
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="8dp"
+                            style="@style/circleViewImage"
                             android:src="@drawable/phy" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:id="@+id/ivChemistrySub"
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="8dp"
+                            style="@style/circleViewImage"
+
                             android:src="@drawable/c" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:id="@+id/ivMathSub"
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="8dp"
+                            style="@style/circleViewImage"
+
                             android:src="@drawable/m" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:id="@+id/ivBiologySub"
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="8dp"
+                            style="@style/circleViewImage"
+
+                            android:src="@drawable/b" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/ivCs"
+                            style="@style/circleViewImage"
+
+                            android:src="@drawable/b" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/ivEnglish"
+                            style="@style/circleViewImage"
                             android:src="@drawable/b" />
 
                     </LinearLayout>
@@ -179,27 +185,19 @@
                         android:orientation="horizontal">
 
                         <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="8dp"
+                            style="@style/circleViewImage"
                             android:src="@drawable/programmer" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="8dp"
+                            style="@style/circleViewImage"
                             android:src="@drawable/engineer" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="8dp"
+                            style="@style/circleViewImage"
                             android:src="@drawable/science" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="8dp"
+                            style="@style/circleViewImage"
                             android:src="@drawable/developers" />
 
                     </LinearLayout>
@@ -233,27 +231,19 @@
                         android:orientation="horizontal">
 
                         <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="8dp"
+                            style="@style/circleViewImage"
                             android:src="@drawable/phy" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="8dp"
+                            style="@style/circleViewImage"
                             android:src="@drawable/c" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="8dp"
+                            style="@style/circleViewImage"
                             android:src="@drawable/m" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="8dp"
+                            style="@style/circleViewImage"
                             android:src="@drawable/b" />
 
                     </LinearLayout>
@@ -278,27 +268,19 @@
                         android:orientation="horizontal">
 
                         <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="8dp"
+                            style="@style/circleViewImage"
                             android:src="@drawable/phy" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="8dp"
+                            style="@style/circleViewImage"
                             android:src="@drawable/c" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="8dp"
+                            style="@style/circleViewImage"
                             android:src="@drawable/m" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="8dp"
+                            style="@style/circleViewImage"
                             android:src="@drawable/b" />
 
                     </LinearLayout>

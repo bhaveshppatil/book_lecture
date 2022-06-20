@@ -6,4 +6,15 @@
     <string name="live_topics">Live Topics</string>
     <string name="online_streaming">Online Streaming</string>
     <string name="events">Events</string>
+    <string name="benefits"><![CDATA[Training From Experts \nAffordable Fees \nLatest Syllabus \nHands on Training - Approx 25% Theory & 75% Practicals \nCertification & Job Oriented Course \nProfessional Notes & Guidance \nLive Projects / Case Studies \nInterview Preparation & Resume Building \nDedicated Placement Team \n100% Job Opportunities ! \nFree Demo etc. \nOverall 30+ Courses - 1000+ Companies - Since 2014!]]></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ratings">80% 1.7K ratings</string>
+    <string name="add_your_rating_amp_review"><![CDATA[Add your rating & review]]></string>
+    <string name="your_ratings_matter">Your ratings matter</string>
+    <string name="rate_now">Rate Now</string>
+    <string name="ac_non_ac">Ac, Non Ac</string>
+    <string name="hindi_english">Hindi, English</string>
+    <string name="our_benefits">Our Benefits</string>
+    <string name="book_seat">Book Seat</string>
 </resources>

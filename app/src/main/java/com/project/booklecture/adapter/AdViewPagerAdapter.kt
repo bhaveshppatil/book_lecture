@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.project.booklecture.R
-import com.project.booklecture.adapter.viewPager.AdViewHolder
+import com.project.booklecture.adapter.viewHolder.AdViewHolder
 
 class ViewPagerAdapter (var context: Context) : RecyclerView.Adapter<AdViewHolder>(){
 
