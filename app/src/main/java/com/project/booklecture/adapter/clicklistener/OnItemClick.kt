@@ -1,8 +1,8 @@
 package com.project.booklecture.adapter.clicklistener
 
-import com.project.booklecture.remote.response.Product
+import com.project.booklecture.remote.response.ClassResponseItem
 
 interface OnItemClick {
-    fun onLectureClick(product: Product)
+    fun onLectureClick(classResponseItem: ClassResponseItem)
 
 }

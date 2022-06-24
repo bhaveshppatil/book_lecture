@@ -1,12 +1,12 @@
 package com.project.booklecture.view
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.SearchView
 import android.widget.Toast
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -16,17 +16,16 @@ import com.project.booklecture.adapter.clicklistener.OnItemClick
 import com.project.booklecture.databinding.ActivitySubjectDetailsBinding
 import com.project.booklecture.di.viewmodel.LectureViewModel
 import com.project.booklecture.remote.Status
-import com.project.booklecture.remote.response.LectureResponse
-import com.project.booklecture.remote.response.Product
+import com.project.booklecture.remote.response.ClassResponseItem
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class SubjectDetailsActivity : AppCompatActivity(), OnItemClick {
 
-    private lateinit var dataBinding : ActivitySubjectDetailsBinding
+    private lateinit var dataBinding: ActivitySubjectDetailsBinding
     private lateinit var lectureAdapter: LectureAdapter
-    private val lectureViewModel : LectureViewModel by viewModels()
-    private val dataList = mutableListOf<Product>()
+    private val lectureViewModel: LectureViewModel by viewModels()
+    private val dataList = mutableListOf<ClassResponseItem>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,25 +53,28 @@ class SubjectDetailsActivity : AppCompatActivity(), OnItemClick {
         })
     }
 
-    private fun loadDataFromApi(){
+    private fun loadDataFromApi() {
         dataBinding.shimmer.startShimmer()
-        lectureViewModel.getDataFromApi().observe(this, Observer {
-            when(it.status){
-                Status.ERROR ->{
+        lectureViewModel.getDataFromApi().observe(this, Observer { it ->
+            when (it.status) {
+                Status.ERROR -> {
                     dataBinding.apply {
                         shimmer.startShimmer()
                         shimmer.visibility = View.GONE
                         showToast("Network Error")
                     }
                 }
-                Status.SUCCESS ->{
-                    it.data?.products?.let {
-                        dataList.addAll(it)
-                        dataBinding.apply {
-                            shimmer.stopShimmer()
-                            shimmer.visibility = View.GONE
-                            recyclerView.visibility = View.VISIBLE
-                            setRecyclerView()
+                Status.SUCCESS -> {
+
+                    it.data?.let {
+                        for (i in it.iterator()) {
+                            dataList.addAll(listOf(i))
+                            dataBinding.apply {
+                                shimmer.stopShimmer()
+                                shimmer.visibility = View.GONE
+                                recyclerView.visibility = View.VISIBLE
+                                setRecyclerView()
+                            }
                         }
                     }
                 }
@@ -90,25 +92,26 @@ class SubjectDetailsActivity : AppCompatActivity(), OnItemClick {
 
     private fun searchLectureInList(query: String) {
 
-        val resultList = ArrayList<Product>()
+        val resultList = ArrayList<ClassResponseItem>()
         for (data in dataList){
-            if (data.title.toLowerCase().contains(query.toLowerCase())){
+            if (data.classname.toLowerCase().contains(query.toLowerCase())) {
                 resultList.add(data)
             }
         }
-        if (resultList.isEmpty()){
+        if (resultList.isEmpty()) {
             showToast("Entered data not found in list")
-        }else{
+        } else {
             lectureAdapter.searchLectureInList(resultList)
         }
     }
-    private fun showToast(str : String){
+
+    private fun showToast(str: String) {
         Toast.makeText(this, str, Toast.LENGTH_SHORT).show()
     }
 
-    override fun onLectureClick(product: Product) {
-        val intent = Intent(this, LectureDetailsActivity::class.java)
-        intent.putExtra("product", product)
+    override fun onLectureClick(classResponseItem: ClassResponseItem) {
+        val intent = Intent(this, ClassDetailsActivity::class.java)
+        intent.putExtra("classResponseItem", classResponseItem)
         startActivity(intent)
     }
 }

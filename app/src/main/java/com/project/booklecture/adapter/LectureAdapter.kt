@@ -8,10 +8,10 @@ import com.project.booklecture.R
 import com.project.booklecture.adapter.clicklistener.OnItemClick
 import com.project.booklecture.adapter.viewHolder.LectureViewHolder
 import com.project.booklecture.databinding.LectureDetailsLayoutBinding
-import com.project.booklecture.remote.response.Product
+import com.project.booklecture.remote.response.ClassResponseItem
 
 class LectureAdapter(
-    var dataModelList :  MutableList<Product>,
+    var dataModelList: MutableList<ClassResponseItem>,
     val onItemClick: OnItemClick
 ): RecyclerView.Adapter<LectureViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LectureViewHolder {
@@ -32,7 +32,8 @@ class LectureAdapter(
     override fun getItemCount(): Int {
         return dataModelList.size
     }
-    fun searchLectureInList(searchLectureList : ArrayList<Product>){
+
+    fun searchLectureInList(searchLectureList: ArrayList<ClassResponseItem>) {
         dataModelList = searchLectureList
         notifyDataSetChanged()
     }

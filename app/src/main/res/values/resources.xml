@@ -28,4 +28,17 @@
         <item name="android:textSize">18sp</item>
     </style>
 
+    <style name="tvClassDetail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="background">@color/gray</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginStart">@dimen/dp_10</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/primaryDark</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+
 </resources>

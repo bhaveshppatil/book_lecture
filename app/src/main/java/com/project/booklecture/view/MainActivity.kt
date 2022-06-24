@@ -1,4 +1,4 @@
-package com.project.booklecture
+package com.project.booklecture.view
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,9 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayoutMediator
+import com.project.booklecture.R
 import com.project.booklecture.adapter.ViewPagerAdapter
 import com.project.booklecture.databinding.ActivityMainBinding
-import com.project.booklecture.view.SubjectDetailsActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 

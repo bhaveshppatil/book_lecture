@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -149,19 +149,17 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:id="@+id/ivBiologySub"
                             style="@style/circleViewImage"
-
                             android:src="@drawable/b" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:id="@+id/ivCs"
                             style="@style/circleViewImage"
-
-                            android:src="@drawable/b" />
+                            android:src="@drawable/computerscience" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:id="@+id/ivEnglish"
                             style="@style/circleViewImage"
-                            android:src="@drawable/b" />
+                            android:src="@drawable/eng" />
 
                     </LinearLayout>
                 </HorizontalScrollView>
@@ -200,6 +198,14 @@
                             style="@style/circleViewImage"
                             android:src="@drawable/developers" />
 
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            style="@style/circleViewImage"
+                            android:src="@drawable/android" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            style="@style/circleViewImage"
+                            android:src="@drawable/automation" />
+
                     </LinearLayout>
                 </HorizontalScrollView>
 
@@ -232,19 +238,27 @@
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             style="@style/circleViewImage"
-                            android:src="@drawable/phy" />
+                            android:src="@drawable/technology" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             style="@style/circleViewImage"
-                            android:src="@drawable/c" />
+                            android:src="@drawable/android" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             style="@style/circleViewImage"
-                            android:src="@drawable/m" />
+                            android:src="@drawable/automation" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             style="@style/circleViewImage"
-                            android:src="@drawable/b" />
+                            android:src="@drawable/computerscience" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            style="@style/circleViewImage"
+                            android:src="@drawable/robot" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            style="@style/circleViewImage"
+                            android:src="@drawable/automation" />
 
                     </LinearLayout>
                 </HorizontalScrollView>
@@ -269,19 +283,26 @@
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             style="@style/circleViewImage"
-                            android:src="@drawable/phy" />
+                            android:src="@drawable/developers" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             style="@style/circleViewImage"
-                            android:src="@drawable/c" />
+                            android:src="@drawable/programmer" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             style="@style/circleViewImage"
-                            android:src="@drawable/m" />
+                            android:src="@drawable/robot" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             style="@style/circleViewImage"
-                            android:src="@drawable/b" />
+                            android:src="@drawable/electronics" />
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            style="@style/circleViewImage"
+                            android:src="@drawable/engineer" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            style="@style/circleViewImage"
+                            android:src="@drawable/technology" />
 
                     </LinearLayout>
                 </HorizontalScrollView>

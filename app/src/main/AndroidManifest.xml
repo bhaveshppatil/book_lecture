@@ -14,13 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BookLecture">
         <activity
-            android:name=".view.LectureDetailsActivity"
+            android:name=".view.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.ClassDetailsActivity"
             android:exported="false" />
         <activity
             android:name=".view.SubjectDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

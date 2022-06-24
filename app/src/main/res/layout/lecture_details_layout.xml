@@ -17,9 +17,9 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/crdLogo"
-                android:layout_width="@dimen/dp_80"
-                android:layout_height="@dimen/dp_80"
-                app:cardCornerRadius="@dimen/dp_40">
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="@dimen/dp_70"
+                app:cardCornerRadius="@dimen/dp_35">
 
                 <ImageView
                     android:id="@+id/ivClassLogo"
@@ -33,7 +33,7 @@
                 android:id="@+id/tvClassName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginStart="@dimen/dp_20"
                 android:layout_toEndOf="@id/crdLogo"
                 android:text="Coaching Name"
                 android:textColor="@color/light_green"
@@ -48,23 +48,23 @@
                 android:layout_marginStart="@dimen/dp_20"
                 android:layout_marginTop="@dimen/dp_10"
                 android:layout_toEndOf="@id/crdLogo"
-                android:fontFamily="@font/poppins_medium"
+                android:fontFamily="@font/basic"
                 android:text="Lecture Date/Time"
                 android:textColor="@color/primaryDark"
-                android:textSize="17sp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvClassLocation"
+                android:id="@+id/tvField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvLectureDateTime"
                 android:layout_marginStart="@dimen/dp_20"
                 android:layout_toEndOf="@id/crdLogo"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Coaching Place"
+                android:text="Field"
                 android:textColor="@color/primaryDark"
-                android:textSize="17sp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
         </RelativeLayout>
