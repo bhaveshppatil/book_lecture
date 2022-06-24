@@ -151,7 +151,7 @@
             android:fontFamily="@font/poppins_medium"
             android:text="@string/book_seat"
             android:textAllCaps="false"
-            android:textColor="@color/primaryDark"
+            android:textColor="@color/light_green"
             android:textSize="22sp"
             android:visibility="visible" />
     </RelativeLayout>
