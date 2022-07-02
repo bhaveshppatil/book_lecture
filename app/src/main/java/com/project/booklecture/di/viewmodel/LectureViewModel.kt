@@ -20,4 +20,6 @@ class LectureViewModel @Inject constructor(private val lectureRepo: LectureRepo)
             emit(data)
         }
     }
+
+
 }

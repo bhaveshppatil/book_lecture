@@ -1,4 +1,4 @@
-package com.project.booklecture.adapter.clicklistener
+package com.project.booklecture.adapter.listeners
 
 import com.project.booklecture.remote.response.ClassResponseItem
 

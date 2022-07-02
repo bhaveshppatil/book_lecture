@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.PaymentDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlPayment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FDFDFD"
+            android:gravity="bottom"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/ivOnlinePay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_200"
+                android:src="@drawable/online_pay" />
+
+            <TextView
+                android:id="@+id/tvClassName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivOnlinePay"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="Class Name"
+                android:fontFamily="@font/basic"
+                android:textColor="@color/light_green"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvClassDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvClassName"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Class Date"
+                android:fontFamily="@font/basic"
+                android:textColor="@color/light_green"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSeatBooked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvClassDate"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Seat Book"
+                android:fontFamily="@font/basic"
+                android:textColor="@color/light_green"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvClassFees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSeatBooked"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Class Fees"
+                android:fontFamily="@font/basic"
+                android:textColor="@color/light_green"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPaymentStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvClassFees"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="Payment pending"
+                android:textAlignment="center"
+                android:fontFamily="@font/concert_one"
+                android:textColor="@color/light_green"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnProceed"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="60dp"
+                android:layout_below="@id/tvPaymentStatus"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:background="@drawable/btn_book_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/light_green"
+                android:textSize="22sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>

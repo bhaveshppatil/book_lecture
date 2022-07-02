@@ -14,5 +14,6 @@ data class ClassResponseItem(
     val language: String,
     val logo: String,
     val size: String,
-    val time: String
+    val time: String,
+    val price : Double
 ) : Serializable

@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.project.booklecture.R
-import com.project.booklecture.adapter.clicklistener.OnItemClick
+import com.project.booklecture.adapter.listeners.OnItemClick
 import com.project.booklecture.adapter.viewHolder.LectureViewHolder
 import com.project.booklecture.databinding.LectureDetailsLayoutBinding
 import com.project.booklecture.remote.response.ClassResponseItem

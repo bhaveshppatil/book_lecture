@@ -1,27 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:clickable="true"
-    android:background="@drawable/sheet_shape"
-    android:orientation="vertical"
-    android:focusable="true">
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.fragments.ClassFormatFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:paddingBottom="@dimen/dp_20"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_20">
 
             <TextView
                 android:id="@+id/tvSelectLang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_20"
                 android:layout_marginStart="@dimen/dp_20"
-                android:drawablePadding="10dp"
+                android:layout_marginTop="@dimen/dp_20"
                 android:layout_marginEnd="@dimen/dp_20"
+                android:drawablePadding="10dp"
                 android:fontFamily="@font/poppins_medium"
                 android:text="Select Language"
                 android:textColor="@color/black"
@@ -30,25 +36,25 @@
             <RadioGroup
                 android:id="@+id/rgSelectLanguage"
                 android:layout_width="match_parent"
-                android:orientation="horizontal"
+                android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_20"
-                android:layout_height="wrap_content">
+                android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/rBtnHindiLng"
                     android:layout_width="wrap_content"
-                    android:text="Hindi"
-                    android:paddingStart="@dimen/dp_20"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/basic"
-                    android:layout_height="wrap_content"/>
+                    android:paddingStart="@dimen/dp_20"
+                    android:text="Hindi" />
 
                 <RadioButton
                     android:id="@+id/rBtnEngLng"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/dp_50"
-                    android:text="English"
                     android:paddingStart="@dimen/dp_20"
-                    android:layout_height="wrap_content"/>
+                    android:text="English" />
 
             </RadioGroup>
 
@@ -66,25 +72,25 @@
             <RadioGroup
                 android:id="@+id/rgSelectFormat"
                 android:layout_width="match_parent"
-                android:orientation="horizontal"
+                android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_20"
-                android:layout_height="wrap_content">
+                android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/rBtnAcClass"
                     android:layout_width="wrap_content"
-                    android:text="Ac"
-                    android:paddingStart="@dimen/dp_20"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/basic"
-                    android:layout_height="wrap_content"/>
+                    android:paddingStart="@dimen/dp_20"
+                    android:text="Ac" />
 
                 <RadioButton
                     android:id="@+id/rBtnNonAcClass"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/dp_50"
-                    android:text="Non Ac"
                     android:paddingStart="@dimen/dp_20"
-                    android:layout_height="wrap_content"/>
+                    android:text="Non Ac" />
 
             </RadioGroup>
 
@@ -92,18 +98,19 @@
                 android:id="@+id/btnNext"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:paddingStart="@dimen/dp_20"
-                android:paddingEnd="@dimen/dp_20"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_20"
                 android:background="@drawable/btn_book_bg"
                 android:fontFamily="@font/poppins_medium"
+                android:paddingStart="@dimen/dp_20"
+                android:paddingEnd="@dimen/dp_20"
                 android:text="@string/next"
-                android:layout_marginTop="@dimen/dp_20"
                 android:textAllCaps="false"
-                android:layout_gravity="center"
                 android:textColor="@color/light_green"
                 android:textSize="22sp"
                 android:visibility="visible" />
 
         </LinearLayout>
 
-</LinearLayout>
+    </RelativeLayout>
+</layout>

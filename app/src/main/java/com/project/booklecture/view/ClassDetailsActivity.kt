@@ -36,54 +36,14 @@ class ClassDetailsActivity : AppCompatActivity() {
             tvLanguage.text = item.language
             tvAddress.text = item.address
             tvSeatAvailability.text = "Seat- ${item.density}"
+            tvFees.text = "₹${item.price}"
             Glide.with(ivClassPhotos).load(item.images).into(ivClassPhotos)
         }
 
         dataBinding.btnBookSeat.setOnClickListener {
-            val dialog = BottomSheetDialog(this)
-            val view = layoutInflater.inflate(R.layout.seat_booking_sheet, null)
-            val radioGroup = findViewById<RadioGroup>(R.id.rgSelectFormat)
-            val rBtnAcClass = findViewById<RadioButton>(R.id.rBtnAcClass)
-            val rBtnNonAcClass = findViewById<RadioButton>(R.id.rBtnNonAcClass)
-            val radioGroupLng = findViewById<RadioGroup>(R.id.rgSelectLanguage)
-            val rBtnHindiLng = findViewById<RadioButton>(R.id.rBtnHindiLng)
-            val rBtnEngLng = findViewById<RadioButton>(R.id.rBtnEngLng)
-            val btnNext = findViewById<Button>(R.id.btnNext)
-            val next = view.findViewById<Button>(R.id.btnNext)
-
-            radioGroup?.setOnCheckedChangeListener { _, _ ->
-                val radioButton: Int = radioGroup.checkedRadioButtonId
-                if (rBtnAcClass.id == radioButton) {
-                    showToast("Ac Class Selected")
-                }
-                if (rBtnNonAcClass.id == radioButton) {
-                    showToast("Non Ac Class Selected")
-                }
-            }
-
-            radioGroupLng?.setOnCheckedChangeListener { _, _ ->
-                val radioButton: Int = radioGroup.checkedRadioButtonId
-                if (rBtnHindiLng.id == radioButton) {
-                    showToast("Hindi Language Selected")
-                }
-                if (rBtnEngLng.id == radioButton) {
-                    showToast("English Language Selected")
-                }
-            }
-
-            next?.setOnClickListener {
-                val intent = Intent(this, PaymentActivity::class.java)
-                startActivity(intent)
-            }
-
-            dialog.setCancelable(true)
-            dialog.setContentView(view)
-            dialog.show()
-
+            val intent = Intent(this, SheetContainerActivity::class.java)
+            intent.putExtra("classResponseItem", item)
+            startActivity(intent)
         }
-
-    }
-    private fun showToast(data : String){
-        Toast.makeText(this, data, Toast.LENGTH_SHORT).show()
     }
 }

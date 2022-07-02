@@ -12,20 +12,9 @@
     </style>
 
     <style name="circleViewImage">
-        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_width">60dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_margin">@dimen/dp_10</item>
-    </style>
-
-    <style name="selectionTextView">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">@dimen/dp_40</item>
-        <item name="background">@drawable/btnshape</item>
-        <item name="android:fontFamily">@font/basic</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_weight">1</item>
-        <item name="android:textColor">@color/primaryDark</item>
-        <item name="android:textSize">18sp</item>
     </style>
 
     <style name="tvClassDetail">
@@ -38,6 +27,22 @@
         <item name="android:textColor">@color/primaryDark</item>
         <item name="textAllCaps">true</item>
         <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="circleButton">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="editTextPayment">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_50</item>
+        <item name="android:paddingStart">@dimen/dp_20</item>
+        <item name="android:textColor">@color/primaryDark</item>
     </style>
 
 

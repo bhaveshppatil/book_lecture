@@ -114,6 +114,7 @@
                 <TextView
                     android:id="@+id/tvSubjects"
                     style="@style/textView"
+                    android:layout_marginTop="@dimen/dp_20"
                     android:layout_below="@id/parent_view"
                     android:text="@string/subjects" />
 
@@ -137,13 +138,11 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:id="@+id/ivChemistrySub"
                             style="@style/circleViewImage"
-
                             android:src="@drawable/c" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:id="@+id/ivMathSub"
                             style="@style/circleViewImage"
-
                             android:src="@drawable/m" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
@@ -183,26 +182,32 @@
                         android:orientation="horizontal">
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/developerLive"
                             style="@style/circleViewImage"
                             android:src="@drawable/programmer" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/engineeringLive"
                             style="@style/circleViewImage"
                             android:src="@drawable/engineer" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/scienceLive"
                             style="@style/circleViewImage"
                             android:src="@drawable/science" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/programmingLive"
                             style="@style/circleViewImage"
                             android:src="@drawable/developers" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/androidLive"
                             style="@style/circleViewImage"
                             android:src="@drawable/android" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/automationLive"
                             style="@style/circleViewImage"
                             android:src="@drawable/automation" />
 
@@ -237,22 +242,27 @@
                         android:orientation="horizontal">
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/technologyOST"
                             style="@style/circleViewImage"
                             android:src="@drawable/technology" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/androidOST"
                             style="@style/circleViewImage"
                             android:src="@drawable/android" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/automationOST"
                             style="@style/circleViewImage"
                             android:src="@drawable/automation" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/csOST"
                             style="@style/circleViewImage"
                             android:src="@drawable/computerscience" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/roboticsOST"
                             style="@style/circleViewImage"
                             android:src="@drawable/robot" />
 
@@ -282,25 +292,31 @@
                         android:orientation="horizontal">
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/developersEvent"
                             style="@style/circleViewImage"
                             android:src="@drawable/developers" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/programmingEvent"
                             style="@style/circleViewImage"
                             android:src="@drawable/programmer" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/roboticsEvent"
                             style="@style/circleViewImage"
                             android:src="@drawable/robot" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/electronicsEvent"
                             style="@style/circleViewImage"
                             android:src="@drawable/electronics" />
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/engineeringEvent"
                             style="@style/circleViewImage"
                             android:src="@drawable/engineer" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/techEvent"
                             style="@style/circleViewImage"
                             android:src="@drawable/technology" />
 

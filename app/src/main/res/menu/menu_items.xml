@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/acClass"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="AC Class" />
+    <item
+        android:id="@+id/nonAcClass"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Non AC Class" />
+
+    <item
+        android:id="@+id/lowToHigh"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Low to High" />
+
+    <item
+        android:id="@+id/search_bar"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView" />
+
+</menu>

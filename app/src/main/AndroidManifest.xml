@@ -14,7 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BookLecture">
         <activity
-            android:name=".view.PaymentActivity"
+            android:name=".view.PaymentDetails"
+            android:exported="false" />
+        <activity
+            android:name=".view.LiveTopicsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.SheetContainerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".gpay.PaymentActivity"
             android:exported="false" />
         <activity
             android:name=".view.ClassDetailsActivity"

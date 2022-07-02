@@ -8,6 +8,7 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/llMain"
             android:layout_alignParentTop="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -137,13 +138,30 @@
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/tvFees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llMain"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_toStartOf="@id/btnBookSeat"
+            android:fontFamily="@font/basic"
+            android:gravity="center"
+            android:text="@string/fees"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
         <Button
             android:id="@+id/btnBookSeat"
             android:layout_width="@dimen/dp_200"
             android:layout_height="60dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_10"
             android:layout_marginTop="@dimen/dp_20"
             android:layout_marginEnd="@dimen/dp_20"
             android:layout_marginBottom="@dimen/dp_20"
